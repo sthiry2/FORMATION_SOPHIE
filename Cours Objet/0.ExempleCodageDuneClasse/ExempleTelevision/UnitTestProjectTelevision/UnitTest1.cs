@@ -10,7 +10,7 @@ namespace UnitTestProjectTelevision
         public void TestMethod1()
         {
             NameSpaceTelevision.Television t = new NameSpaceTelevision.Television();
-            Assert.AreEqual(t, new NameSpaceTelevision.Television());
+            Assert.(t, new NameSpaceTelevision.Television());
         }
     }
 }
