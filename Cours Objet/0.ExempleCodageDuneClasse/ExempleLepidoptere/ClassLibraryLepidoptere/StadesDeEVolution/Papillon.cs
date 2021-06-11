@@ -5,11 +5,24 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere.StadesDeEVolution
 {
-    public class Papillon : StadeDEvolution
+     class Papillon : StadeDEvolution
     {
+
+        const int nbAiles = 2;
+
+        public override StadeDEvolution DonneLeProchainStade()
+        {
+            return this;
+        }
+
         public override void SeDeplacer()
         {
             Console.WriteLine("Je vole");
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() + " nbAiles="+ nbAiles;
         }
     }
 }

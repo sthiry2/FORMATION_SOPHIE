@@ -5,9 +5,14 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere.StadesDeEVolution
 {
-    public abstract class StadeDEvolution
+     abstract class StadeDEvolution
     {
         public abstract void SeDeplacer();
         public abstract StadeDEvolution DonneLeProchainStade();
+
+        public override string ToString()
+        {
+            return base.ToString() /*attributs*/;
+        }
     }
 }

@@ -5,7 +5,7 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere.StadesDeEVolution
 {
-    public class Oeuf : StadeDEvolution
+     class Oeuf : StadeDEvolution
     {
         public override StadeDEvolution DonneLeProchainStade()
         {
@@ -21,5 +21,12 @@ namespace ClassLibraryLepidoptere.StadesDeEVolution
         //{
         //    return "Je ne sais pas me deplacer";
         //}
+
+        public override string ToString()
+        {
+            return base.ToString();
+        }
     }
+
+   
 }

@@ -43,9 +43,13 @@ namespace ClassLibraryLepidoptere
         //solution object
         public void SeTransformer()
         {
-            //...
-                stadeCourant.DonneLeProchainStade();
-            //..
+            stadeCourant=stadeCourant.DonneLeProchainStade();
+
+        }
+
+        public override string ToString()
+        {
+            return base.ToString() +" nom="+nom+" stadeCourant="+stadeCourant;
         }
     }
 }

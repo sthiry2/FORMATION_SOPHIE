@@ -41,7 +41,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="PapillonAvecUneAileEnMoins.cs" />
     <Compile Include="StadesDeEVolution\Chenille.cs" />
     <Compile Include="StadesDeEVolution\Chrysalide.cs" />
     <Compile Include="Lepidoptere.cs" />

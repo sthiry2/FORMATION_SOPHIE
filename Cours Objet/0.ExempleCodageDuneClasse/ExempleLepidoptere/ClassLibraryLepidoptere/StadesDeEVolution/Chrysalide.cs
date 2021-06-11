@@ -5,8 +5,13 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere.StadesDeEVolution
 {
-    public class Chrysalide : StadeDEvolution
+     class Chrysalide : StadeDEvolution
     {
+        public override StadeDEvolution DonneLeProchainStade()
+        {
+            return new Papillon();
+        }
+
         public override void SeDeplacer()
         {
             Console.WriteLine("Je reste accroché");

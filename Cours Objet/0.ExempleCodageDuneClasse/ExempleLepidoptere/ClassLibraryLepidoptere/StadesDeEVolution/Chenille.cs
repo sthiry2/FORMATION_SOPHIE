@@ -5,8 +5,13 @@ using System.Text;
 
 namespace ClassLibraryLepidoptere.StadesDeEVolution
 {
-    public class Chenille : StadeDEvolution
+     class Chenille : StadeDEvolution
     {
+        public override StadeDEvolution DonneLeProchainStade()
+        {
+            return new Chrysalide();
+        }
+
         public override void SeDeplacer()
         {
             Console.WriteLine("Je rampe");

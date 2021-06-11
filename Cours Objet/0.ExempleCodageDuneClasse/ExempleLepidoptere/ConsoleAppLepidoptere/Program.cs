@@ -14,6 +14,7 @@ namespace ConsoleAppLepidoptere
 
             Lepidoptere beatrice;
             beatrice = new Lepidoptere("Bea");
+
             beatrice.SeDeplacer();
             //faire evoluer
             //puis
@@ -33,6 +34,10 @@ namespace ConsoleAppLepidoptere
             beatrice.SeTransformer();
             //puis
             beatrice.SeDeplacer();
+
+
+            Console.WriteLine(beatrice.ToString());
+
 
 
         }
