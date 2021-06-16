@@ -27,7 +27,7 @@ namespace ClassLibraryVoiture
             this.monMoteur = monMoteur;
         }
 
-        private Voiture(int compteurEnKm, bool tourne, int diametre, bool estDemarre, int nbCV)
+        public Voiture(int compteurEnKm, bool tourne, int diametre, bool estDemarre, int nbCV)
         :this(compteurEnKm,
              new List<Roue>() { new Roue(tourne, diametre),new Roue(tourne, diametre),new Roue(tourne, diametre),new Roue(tourne, diametre) },
              new Moteur(estDemarre,nbCV))
