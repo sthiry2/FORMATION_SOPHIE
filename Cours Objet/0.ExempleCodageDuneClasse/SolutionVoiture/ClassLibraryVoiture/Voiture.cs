@@ -37,10 +37,10 @@ namespace ClassLibraryVoiture
 
             //pour les roues
             //this.mesRoues = new List<Roue>();
-            //this.mesRoues[0] = new Roue(tourne, diametre);
-            //this.mesRoues[1] = new Roue(tourne, diametre);
-            //this.mesRoues[2] = new Roue(tourne, diametre);
-            //this.mesRoues[3] = new Roue(tourne, diametre);
+            //this.mesRoues.Add(new Roue(tourne, diametre));
+            //this.mesRoues.Add(new Roue(tourne, diametre));
+            //this.mesRoues.Add(new Roue((tourne, diametre));
+            //this.mesRoues.Add(new Roue(tourne, diametre));
 
             //pour le moteur
             //this.monMoteur = new Moteur(estDemarre, nbCV);
