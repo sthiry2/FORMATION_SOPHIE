@@ -13,9 +13,12 @@ namespace ConsoleAppTestVoiture
         {
             Voiture maTitine;
             maTitine = new Voiture();
-            //maTitine.Demarrer();
+            bool ok= maTitine.Demarrer();
+
+            bool avance= maTitine.Avancer();
 
             Voiture deuxiemeTitine = new Voiture(maTitine);
+  
 
         }
     }

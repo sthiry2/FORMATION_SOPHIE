@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace ClassLibraryVoiture.ElementVoiture
 {
-    class Roue
+    class Roue: ICloneable
     {
         private bool tourne;
         private int diametre;
@@ -35,5 +35,20 @@ namespace ClassLibraryVoiture.ElementVoiture
             this.diametre = _roueARecopier.diametre;
         }
 
+        public object Clone()
+        {
+            return new Roue(this);
+        }
+
+        public bool Tourner()
+        {
+            bool ok = false;
+            if (!tourne)
+            {
+                tourne = true;
+                ok = true;
+            }
+            return ok;
+        }
     }
 }

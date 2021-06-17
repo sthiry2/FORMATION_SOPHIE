@@ -20,6 +20,11 @@ namespace ClassLibraryVoiture
         {
         }
 
+        public bool Avancer()
+        {
+            return monMoteur.EntrainerRoues(mesRoues[0], mesRoues[1]);
+        }
+
         private Voiture(int compteurEnKm, List<Roue> mesRoues, Moteur monMoteur)
         {
             this.compteurEnKm = compteurEnKm;
@@ -63,6 +68,11 @@ namespace ClassLibraryVoiture
 
             //pour le moteur
             this.monMoteur = new Moteur(_voitureARecopier.monMoteur);
+        }
+
+        public bool Demarrer()
+        {
+            return monMoteur.Demarrer();
         }
 
 

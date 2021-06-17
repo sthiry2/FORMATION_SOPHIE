@@ -32,6 +32,30 @@ namespace ClassLibraryVoiture.ElementVoiture
         {
         }
 
+        public bool EntrainerRoues(Roue _roueMotrice1, Roue _roueMotrice2)
+        {
+            bool ok=false;
+            if (estDemarre)
+            {
+                bool okRoue1 = _roueMotrice1.Tourner();
+                bool okRoue2 = _roueMotrice2.Tourner();
+                ok = okRoue1 && okRoue2;
+            }
 
+            return ok;
+        }
+
+        public bool Demarrer()
+        {
+            bool ok=false;
+
+            if (!estDemarre)
+            {
+                ok = true;
+                estDemarre = true;
+            }
+
+           return ok;
+        }
     }
 }
