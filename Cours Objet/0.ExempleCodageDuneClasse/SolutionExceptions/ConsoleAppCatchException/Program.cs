@@ -7,6 +7,11 @@ using System.Threading.Tasks;
 
 namespace ConsoleAppCatchException
 {
+    //documentation
+    //https://docs.microsoft.com/fr-fr/dotnet/standard/exceptions/exception-class-and-properties
+    //exception courante https://docs.microsoft.com/fr-fr/dotnet/standard/exceptions/
+    //exception localise https://docs.microsoft.com/fr-fr/dotnet/standard/exceptions/
+    //levee explicite d'exception https://docs.microsoft.com/fr-fr/dotnet/standard/exceptions/how-to-explicitly-throw-exceptions
     class Program
     {
         static void Main(string[] args)
