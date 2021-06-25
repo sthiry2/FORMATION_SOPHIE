@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30717.126
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClassLibraryExceptions", "ClassLibraryExceptions\ClassLibraryExceptions.csproj", "{31468EFD-D57B-4B1F-AF32-540B629F7D37}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppTestMontre", "ConsoleAppTestMontre\ConsoleAppTestMontre.csproj", "{003389D6-DCFF-461D-B6ED-B774E9CA8B0B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleAppCatchException", "ConsoleAppCatchException\ConsoleAppCatchException.csproj", "{5192BF6D-6A1C-44AC-9CDE-D2990846A550}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Montre", "Montre", "{C583B1B6-5194-4F3E-8D3A-ED40D07C4941}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{31468EFD-D57B-4B1F-AF32-540B629F7D37}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{31468EFD-D57B-4B1F-AF32-540B629F7D37}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{31468EFD-D57B-4B1F-AF32-540B629F7D37}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{31468EFD-D57B-4B1F-AF32-540B629F7D37}.Release|Any CPU.Build.0 = Release|Any CPU
+		{003389D6-DCFF-461D-B6ED-B774E9CA8B0B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{003389D6-DCFF-461D-B6ED-B774E9CA8B0B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{003389D6-DCFF-461D-B6ED-B774E9CA8B0B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{003389D6-DCFF-461D-B6ED-B774E9CA8B0B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5192BF6D-6A1C-44AC-9CDE-D2990846A550}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5192BF6D-6A1C-44AC-9CDE-D2990846A550}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5192BF6D-6A1C-44AC-9CDE-D2990846A550}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5192BF6D-6A1C-44AC-9CDE-D2990846A550}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{31468EFD-D57B-4B1F-AF32-540B629F7D37} = {C583B1B6-5194-4F3E-8D3A-ED40D07C4941}
+		{003389D6-DCFF-461D-B6ED-B774E9CA8B0B} = {C583B1B6-5194-4F3E-8D3A-ED40D07C4941}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {A36F6EC0-13A7-4E6E-822E-4DD542F4C525}
+	EndGlobalSection
+EndGlobal
