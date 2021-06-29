@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Comment CommentText="penser à mettre:&#xD;&#xA;-constructeur&#xD;&#xA;-reencapsuler les methodes de la manche">
+    <Position X="10.943" Y="3.76" Height="0.826" Width="1.7" />
+  </Comment>
+  <Class Name="ClassLibraryJeu421.De">
+    <Position X="0.75" Y="0.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAQEAAAAAAAIAAAACAAIAAAAAAAAAAA=</HashCode>
+      <FileName>De.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="ClassLibraryJeu421.Manche">
+    <Position X="4.75" Y="0.75" Width="3.5" />
+    <TypeIdentifier>
+      <HashCode>EAAAAAAAABAAAIAEABAAAAAAAoAAAAAAAAAAAAAgACA=</HashCode>
+      <FileName>Manche.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Field Name="mes3Des" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ClassLibraryJeu421.Partie">
+    <Position X="10.5" Y="0.75" Width="2.75" />
+    <TypeIdentifier>
+      <HashCode>BAAAAAgAAgAAAAAEAAAEAAAAAAAAAAAAAEAAAAQAAAA=</HashCode>
+      <FileName>Partie.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="maMancheCourante" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
