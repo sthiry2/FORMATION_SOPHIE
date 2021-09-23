@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+sing NameSpaceTelevision.Aperos;
 
 namespace ConsoleAppTelevision
 {
@@ -11,6 +12,8 @@ namespace ConsoleAppTelevision
     {
         static void Main(string[] args)
         {
+            Bretzel b;
+
             Television laTeleDuSalon;//declaration
             laTeleDuSalon = new Television();// initialisation par instanciation
 

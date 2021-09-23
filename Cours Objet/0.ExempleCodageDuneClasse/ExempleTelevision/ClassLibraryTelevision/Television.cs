@@ -1,4 +1,5 @@
-﻿using System;
+﻿using NameSpaceTelevision.Aperos;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,6 +9,7 @@ namespace NameSpaceTelevision
 {
     public class Television
     {
+        Bretzel b;
         //attributs = champs/fields en C#
         private bool allume;
         private int diagonal;
