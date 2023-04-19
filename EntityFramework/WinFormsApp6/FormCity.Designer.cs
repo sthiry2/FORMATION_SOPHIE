@@ -29,7 +29,6 @@
         private void InitializeComponent()
         {
             components = new System.ComponentModel.Container();
-            cityBindingSource = new BindingSource(components);
             buttonAjouterUnCitY = new Button();
             buttonSuprimerUnCity = new Button();
             buttonModifyUnCity = new Button();
@@ -40,10 +39,16 @@
             textBoxNom = new TextBox();
             labelNom = new Label();
             dataGridViewCities = new DataGridView();
-            dataGridView1 = new DataGridView();
-            ((System.ComponentModel.ISupportInitialize)cityBindingSource).BeginInit();
+            dataGridViewTextBoxColumn1 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn2 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn3 = new DataGridViewTextBoxColumn();
+            dataGridViewTextBoxColumn4 = new DataGridViewTextBoxColumn();
+            cityBindingSource = new BindingSource(components);
+            countryBindingSource = new BindingSource(components);
+            buttonSaveAll = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)cityBindingSource).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)countryBindingSource).BeginInit();
             SuspendLayout();
             // 
             // buttonAjouterUnCitY
@@ -130,28 +135,64 @@
             // 
             // dataGridViewCities
             // 
+            dataGridViewCities.AutoGenerateColumns = false;
             dataGridViewCities.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCities.Columns.AddRange(new DataGridViewColumn[] { dataGridViewTextBoxColumn1, dataGridViewTextBoxColumn2, dataGridViewTextBoxColumn3, dataGridViewTextBoxColumn4 });
+            dataGridViewCities.DataSource = cityBindingSource;
             dataGridViewCities.Location = new Point(63, 42);
             dataGridViewCities.Name = "dataGridViewCities";
             dataGridViewCities.RowTemplate.Height = 25;
             dataGridViewCities.Size = new Size(539, 245);
             dataGridViewCities.TabIndex = 10;
             // 
-            // dataGridView1
+            // dataGridViewTextBoxColumn1
             // 
-            dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(639, 226);
-            dataGridView1.Name = "dataGridView1";
-            dataGridView1.RowTemplate.Height = 25;
-            dataGridView1.Size = new Size(446, 52);
-            dataGridView1.TabIndex = 11;
+            dataGridViewTextBoxColumn1.DataPropertyName = "CityId";
+            dataGridViewTextBoxColumn1.HeaderText = "CityId";
+            dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            dataGridViewTextBoxColumn2.DataPropertyName = "CityName";
+            dataGridViewTextBoxColumn2.HeaderText = "CityName";
+            dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            // 
+            // dataGridViewTextBoxColumn3
+            // 
+            dataGridViewTextBoxColumn3.DataPropertyName = "CountryCode";
+            dataGridViewTextBoxColumn3.HeaderText = "CountryCode";
+            dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
+            // 
+            // dataGridViewTextBoxColumn4
+            // 
+            dataGridViewTextBoxColumn4.DataPropertyName = "CountryCodeNavigation";
+            dataGridViewTextBoxColumn4.HeaderText = "CountryCodeNavigation";
+            dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
+            // 
+            // cityBindingSource
+            // 
+            cityBindingSource.DataSource = typeof(Models.City);
+            // 
+            // countryBindingSource
+            // 
+            countryBindingSource.DataSource = typeof(Models.Country);
+            // 
+            // buttonSaveAll
+            // 
+            buttonSaveAll.Location = new Point(644, 245);
+            buttonSaveAll.Name = "buttonSaveAll";
+            buttonSaveAll.Size = new Size(197, 42);
+            buttonSaveAll.TabIndex = 11;
+            buttonSaveAll.Text = "Sauvegarde Tout";
+            buttonSaveAll.UseVisualStyleBackColor = true;
+            buttonSaveAll.Click += buttonSaveAll_Click;
             // 
             // FormCity
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1233, 569);
-            Controls.Add(dataGridView1);
+            Controls.Add(buttonSaveAll);
             Controls.Add(dataGridViewCities);
             Controls.Add(labelNom);
             Controls.Add(textBoxNom);
@@ -164,9 +205,9 @@
             Controls.Add(buttonAjouterUnCitY);
             Name = "FormCity";
             Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)cityBindingSource).EndInit();
             ((System.ComponentModel.ISupportInitialize)dataGridViewCities).EndInit();
-            ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)cityBindingSource).EndInit();
+            ((System.ComponentModel.ISupportInitialize)countryBindingSource).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -176,7 +217,6 @@
         private DataGridViewTextBoxColumn cityNameDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn countryCodeDataGridViewTextBoxColumn;
         private DataGridViewTextBoxColumn countryCodeNavigationDataGridViewTextBoxColumn;
-        private BindingSource cityBindingSource;
         private Button buttonAjouterUnCitY;
         private Button buttonSuprimerUnCity;
         private Button buttonModifyUnCity;
@@ -187,6 +227,12 @@
         private TextBox textBoxNom;
         private Label labelNom;
         private DataGridView dataGridViewCities;
-        private DataGridView dataGridView1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
+        private DataGridViewTextBoxColumn dataGridViewTextBoxColumn4;
+        private BindingSource cityBindingSource;
+        private BindingSource countryBindingSource;
+        private Button buttonSaveAll;
     }
 }

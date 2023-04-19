@@ -12,7 +12,8 @@ namespace WinFormsApp6
             //Creer le context vers la source
             dbContext = new CitiesContext();
             //Chargement de la table Cities
-            dbContext.Cities.Load();
+            dbContext.Cities.Load<City>();
+            //dbContext.Cities.Load();
 
             //Realisation d'un binding entre la source de donnée Cities et le datagridview
             this.dataGridViewCities.DataSource = dbContext.Cities.Local.ToBindingList();
@@ -30,8 +31,12 @@ namespace WinFormsApp6
         {
 
             City c = new City();
-            c.CityName = "PewGraveCity";
-            c.CountryCode = "US";
+            c.CityName = "PewJusteCity";
+            c.CountryCode = "PW";
+            //Country country = new Country();
+            //country.CountryCode = "PW";
+            //country.CountryName = "PewPewLandLand";
+            //c.CountryCodeNavigation = country;
 
             Trace("Avant de l'avoir Add");
             dbContext.Cities.Add(c);
@@ -101,8 +106,15 @@ namespace WinFormsApp6
 
                     dbContext.SaveChanges();
                     Trace("Apres avoir sauvegardé les changements: un UPDATE à été réalisé sur la BD");
+                    this.dataGridViewCities.Refresh();
                 }
             }
+        }
+
+        private void buttonSaveAll_Click(object sender, EventArgs e)
+        {
+            dbContext.SaveChanges();
+            this.dataGridViewCities.Refresh();
         }
     }
 }
