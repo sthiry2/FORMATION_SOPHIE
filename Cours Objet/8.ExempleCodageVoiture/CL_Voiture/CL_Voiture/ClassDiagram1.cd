@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="CL_Voiture.Moteur">
+    <Position X="7" Y="4.75" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAABACAAAAAAAACAAAAAgAAAAAAA=</HashCode>
+      <FileName>Moteur.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CL_Voiture.Roue">
+    <Position X="7.75" Y="0.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAABAKAAAAAAAAAAAAAAAAAAAAAAAgAAAACAAAAAgAA=</HashCode>
+      <FileName>Roue.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="CL_Voiture.Voiture">
+    <Position X="0.5" Y="1.75" Width="5" />
+    <TypeIdentifier>
+      <HashCode>AEAAAAAAAAAAAAAAAAAECAAAAAAAAAAAAAUAAAAAAAA=</HashCode>
+      <FileName>Voiture.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="sonMoteur" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Field Name="ses4Roues" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
